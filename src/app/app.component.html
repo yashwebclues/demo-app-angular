@@ -1,0 +1,98 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 col-md-4 px-0 p-5 xs-p-1">
+      <img src="http://via.placeholder.com/70x70" alt="..." class="rounded-circle">
+      <h2 class="mt-4 start-your-14-day-fr">
+        Start your 14 day free trial
+      </h2>
+      <small class="mt-1 no-credit-card-requi">No credit card required</small>
+      <form class="mt-2" [formGroup]="signUpForm">
+        <div class="row">
+
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <div class="md-form">
+              <input type="text" formControlName="firstName" id="defaultForm-firstname" class="form-control" mdbInputDirective>
+              <label for="defaultForm-firstname" class="text-uppercase">First Name</label>
+            </div>
+          </div>
+
+          <div class="co-sm-12 col-md-12 col-lg-6">
+            <div class="md-form">
+              <input type="text" formControlName="lastName" id="defaultForm-lastname" class="form-control" mdbInputDirective>
+              <label for="defaultForm-lastname" class="text-uppercase">Last Name</label>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-12 col-lg-12">
+              <div class="md-form">
+                <input type="text" formControlName="companyName" id="defaultForm-company" class="form-control" mdbInputDirective>
+                <label for="defaultForm-company" class="text-uppercase">Company Name</label>
+              </div>
+            </div>
+            
+          <div class="col-12">
+            <div class="md-form">
+              <input type="email" formControlName="email" id="defaultForm-email" class="form-control" mdbInputDirective>
+              <label for="defaultForm-email" class="text-uppercase">Email</label>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="md-form">
+                <show-hide-password class="toggle-pwd-btn" icon="fontawesome">
+                <label for="password" class="text-uppercase">Password</label>
+                <input type="password" class="form-control" id="password" formControlName="password" mdbInputDirective>
+                </show-hide-password>
+                <!-- <i class="fa fa-fw fa-eye-slash"></i> -->
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="md-form">
+              <show-hide-password icon="fontawesome" class="toggle-pwd-btn">
+                <label for="confirmPassword" class="text-uppercase">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmPassword" formControlName="confirmPassword" mdbInputDirective>
+                <!-- <i class="fa fa-fw fa-eye toggle-password"></i> -->
+              </show-hide-password>
+            </div>
+          </div>
+
+          <div class="col-12 mb-5">
+          <div class="form-check">
+              <input class="form-check-input" formControlName="terms" mdbInputDirective type="checkbox" class="form-check-input filled-in" id="checkbox2">
+              <label class="form-check-label" for="checkbox2">I agree to the terms of service.</label>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <button type="submit" class="btn btn-light" [disabled]="!signUpForm.valid">Sign Up</button>
+            <button type="button" class="btn btn-link text-black">Cancel</button>
+          </div>
+        </div>
+      </form>
+
+    </div>
+    <div class="col-sm-12 col-md-8 px-0 xs-hide h-screen bg-image">
+      <div class="carousel-caption text-center">
+        <h1 class="mb-4 save-time ">Save Time</h1>
+        <!-- <figure class="quote">
+          <blockquote class="quote__body">
+            <p class="mb-0 with-demo-project-I">With demo project, I’ve saved hundreds of hours that I used to waste on manual data entry.</p>
+            <footer class="blockquote-footer text-white author-login-banner">HELEN JACKSON</footer>
+          </blockquote>
+        </figure> -->
+        <div class="d-flex align-items-center min-h-screen mb-layout">
+                
+            <div class="row">
+              <div class="col-md-12">
+                  <blockquote class="quote__body">
+                      <p class="mb-0 with-demo-project-I">With demo project, I’ve saved hundreds of hours that I used to waste on manual data entry.</p>
+                      <footer class="blockquote-footer text-white author-login-banner">HELEN JACKSON</footer>
+                    </blockquote>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
